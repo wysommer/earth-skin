@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Llewie';
-    src: "./assets/fonts/Llewie.ttf";
+    src: url(./assets/fonts/Llewie.ttf);
 }
 
 html {
