@@ -1,47 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shop | earth skincare</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <nav>
-        <a href="./index.html" class="logo__link">
-          <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
-        </a>
-        <ul class="nav__links--list">
-          <li class="nav__link--list-item">
-            <a href="./about.html" class="nav__link link__hover-effect">about</a>
-          </li>
-          <li class="nav__link--list-item">
-            <a
-              href="./products.html"
-              class="nav__link nav__link--active nav__link--alt-text-1 link__hover-effect"
-              >product</a
-            >
-          </li>
-          <li class="nav__link--list-item">
-            <a
-              href="./help.html"
-              class="nav__link nav__link--alt-text-2 link__hover-effect"
-              >help</a
-            >
-          </li>
-          <li class="nav__link--list-item">
-            <a
-              href="./info.html"
-              class="nav__link nav__link--alt-text-3 link__hover-effect"
-              >info</a
-            >
-          </li>
-          <li class="nav__link--list-item">
-            <a href="" class="nav__link link__hover-effect">
-              <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-</body>
+      <a href="./index.html" class="logo__link">
+        <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
+      </a>
+      <ul class="nav__links--list">
+        <li class="nav__link--list-item">
+          <a href="./about.html" class="nav__link link__hover-effect">about</a>
+        </li>
+        <li class="nav__link--list-item">
+          <a
+            href="./products.html"
+            class="nav__link nav__link--active nav__link--alt-text-1 link__hover-effect"
+            >product</a
+          >
+        </li>
+        <li class="nav__link--list-item">
+          <a
+            href="./help.html"
+            class="nav__link nav__link--alt-text-2 link__hover-effect"
+            >help</a
+          >
+        </li>
+        <li class="nav__link--list-item">
+          <a
+            href="./info.html"
+            class="nav__link nav__link--alt-text-3 link__hover-effect"
+            >info</a
+          >
+        </li>
+        <li class="nav__link--list-item">
+          <a href="" class="nav__link link__hover-effect">
+            <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section id="product__gallery">
+      <div class="product__page--container">
+        <div class="product__page--row">
+          <h2 class="product__gallery--title">check out our products</h2>
+          <div class="product__categories">
+              <h4 class="product__category--title">
+                + natural soap
+              </h4>
+              <h4 class="product__category--title">
+                + moisturizers
+              </h4>
+              <h4 class="product__category--title">
+                + shampoos & conditioners
+              </h4>
+              <h4 class="product__category--title">
+                + cleansers
+              </h4>
+          </div>
+          <div class="product__grid">
+            <!-- <div class="product">
+                <figure class="product__img--wrapper">
+                  <img src="./assets/soap1.jpg" alt="soap" class="product__img" />
+                </figure>
+                <h3 class="product__title">raw shea butter</h3>
+                <p class="product__description">
+                  this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                </p>
+                <p class="product__price">
+                  $11.99
+                  <a href="./products.html" class="view__product--link">view</a>
+                </p>
+              </div> -->
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap1.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap2.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap3.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap4.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap5.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">true natural soap</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap6.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap7.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw cocoa butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap8.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap1.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap2.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap3.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap4.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap5.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">true natural soap</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap6.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap7.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw cocoa butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+            <div class="product">
+              <figure class="product__img--wrapper">
+                <img src="./assets/soap8.jpg" alt="soap" class="product__img" />
+              </figure>
+              <h3 class="product__title">raw shea butter</h3>
+              <p class="product__description">
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
+              </p>
+              <p class="product__price">
+                $11.99
+                <a href="./products.html" class="view__product--link">view</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- <a href="./products.html" class="view-all__products--link">
+            view all products
+          </a> -->
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer__wrapper">
+        <a href="#" class="footer__home--link">earth skincare</a>
+        <div class="footer__menu--wrapper">
+          <ul class="footer__menu--list">
+            <li class="footer__menu--li">
+              <a href="./about.html" class="footer__menu--link link__hover-effect"
+                >about</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./products.html"
+                class="footer__menu--link link__hover-effect"
+                >product</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./help.html"
+                class="footer__menu--link link__hover-effect"
+                >help</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./info.html"
+                class="footer__menu--link link__hover-effect"
+                >info</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2024 earth skincare®</p>
+    </footer>
+  </body>
 </html>
