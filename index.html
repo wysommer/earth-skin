@@ -5,44 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>earth skincare</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8fc247de9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav>
-      <a href="#" class="logo__link">
-        <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
-      </a>
-      <ul class="nav__links--list">
-        <li class="nav__link--list-item">
-          <a href="#hero" class="nav__link link__hover-effect">about</a>
+      <div class="nav__container">
+        <a href="#" class="logo__link">
+          <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
+        </a>
+        <ul class="nav__links--list">
+          <li class="nav__link--list-item">
+            <a href="#hero" class="nav__link link__hover-effect">about</a>
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="#product__gallery"
+              class="nav__link nav__link--alt-text-1 link__hover-effect"
+              >product</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="./help.html"
+              class="nav__link nav__link--alt-text-2 link__hover-effect"
+              >help</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="./info.html"
+              class="nav__link nav__link--alt-text-3 link__hover-effect"
+              >info</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a href="" class="nav__link link__hover-effect">
+              <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
+            </a>
+          </li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__list--li">
+          <a href="./about.html" class="menu__link" onclick="closeMenu()">about</a>
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="#product__gallery"
-            class="nav__link nav__link--alt-text-1 link__hover-effect"
-            >product</a
-          >
+        <li class="menu__list--li">
+          <a href="./products.html" class="menu__link" onclick="closeMenu()">product</a>
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="./help.html"
-            class="nav__link nav__link--alt-text-2 link__hover-effect"
-            >help</a
-          >
+        <li class="menu__list--li">
+          <a href="./help.html" class="menu__link" onclick="closeMenu()">help</a>
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="./info.html"
-            class="nav__link nav__link--alt-text-3 link__hover-effect"
-            >info</a
-          >
-        </li>
-        <li class="nav__link--list-item">
-          <a href="" class="nav__link link__hover-effect">
-            <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
-          </a>
+        <li class="menu__list--li">
+          <a href="./info.html" class="menu__link" onclick="closeMenu()">info</a>
         </li>
       </ul>
-    </nav>
+    </div>
     <section>
       <header>
         <img
@@ -56,17 +85,19 @@
       <div class="hero__content--wrapper">
         <div>
           <h1 class="hero__content">skincare done the right way.</h1>
-          <h1 class="hero__content text__alt-1">natural to the core. <span class="text__alt--blue">LOVE.</span></h1>
-          <h1 class="hero__content text__alt-2">radiant. <span class="text__alt--blue">PEACE. HARMONY.</span></h1>
+          <h1 class="hero__content text__alt-1">
+            natural to the core. <span class="text__alt--blue">LOVE.</span>
+          </h1>
+          <h1 class="hero__content text__alt-2">
+            radiant. <span class="text__alt--blue">PEACE. HARMONY.</span>
+          </h1>
         </div>
       </div>
     </section>
     <section id="product__gallery">
       <div class="container">
         <div class="row">
-          <h2 class="product__gallery--title">
-            check out our products
-          </h2>
+          <h2 class="product__gallery--title">check out our products</h2>
           <div class="product__grid">
             <!-- <div class="product">
               <figure class="product__img--wrapper">
@@ -87,7 +118,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -100,7 +132,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -113,7 +146,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -126,7 +160,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -139,7 +174,8 @@
               </figure>
               <h3 class="product__title">true natural soap</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -152,7 +188,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -165,7 +202,8 @@
               </figure>
               <h3 class="product__title">raw cocoa butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -178,7 +216,8 @@
               </figure>
               <h3 class="product__title">raw shea butter</h3>
               <p class="product__description">
-                this is a great product for dry skin. Lorem ipsum dolor sit amet.
+                this is a great product for dry skin. Lorem ipsum dolor sit
+                amet.
               </p>
               <p class="product__price">
                 $11.99
@@ -198,16 +237,32 @@
         <div class="footer__menu--wrapper">
           <ul class="footer__menu--list">
             <li class="footer__menu--li">
-              <a href="./about.html" class="footer__menu--link link__hover-effect">about</a>
+              <a
+                href="./about.html"
+                class="footer__menu--link link__hover-effect"
+                >about</a
+              >
             </li>
             <li class="footer__menu--li">
-              <a href="./products.html" class="footer__menu--link link__hover-effect">product</a>
+              <a
+                href="./products.html"
+                class="footer__menu--link link__hover-effect"
+                >product</a
+              >
             </li>
             <li class="footer__menu--li">
-              <a href="./help.html" class="footer__menu--link link__hover-effect">help</a>
+              <a
+                href="./help.html"
+                class="footer__menu--link link__hover-effect"
+                >help</a
+              >
             </li>
             <li class="footer__menu--li">
-              <a href="./info.html" class="footer__menu--link link__hover-effect">info</a>
+              <a
+                href="./info.html"
+                class="footer__menu--link link__hover-effect"
+                >info</a
+              >
             </li>
           </ul>
         </div>

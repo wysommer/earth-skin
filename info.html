@@ -5,51 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>info | earth skincare</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="https://kit.fontawesome.com/c8fc247de9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c8fc247de9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <nav>
-      <a href="./index.html" class="logo__link">
-        <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
-      </a>
-      <ul class="nav__links--list">
-        <li class="nav__link--list-item">
-          <a href="./about.html" class="nav__link link__hover-effect">about</a>
+      <div class="nav__container">
+        <a href="./index.html" class="logo__link">
+          <h1 class="logo">earth <span class="text__alt-1">skincare</span></h1>
+        </a>
+        <ul class="nav__links--list">
+          <li class="nav__link--list-item">
+            <a href="#hero" class="nav__link link__hover-effect">about</a>
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="#product__gallery"
+              class="nav__link nav__link--alt-text-1 link__hover-effect"
+              >product</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="./help.html"
+              class="nav__link nav__link--alt-text-2 link__hover-effect"
+              >help</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a
+              href="./info.html"
+              class="nav__link nav__link--alt-text-3 link__hover-effect"
+              >info</a
+            >
+          </li>
+          <li class="nav__link--list-item">
+            <a href="" class="nav__link link__hover-effect">
+              <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
+            </a>
+          </li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__list--li">
+          <a href="./about.html" class="menu__link" onclick="closeMenu()"
+            >about</a
+          >
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="./products.html"
-            class="nav__link nav__link--alt-text-1 link__hover-effect"
+        <li class="menu__list--li">
+          <a href="./products.html" class="menu__link" onclick="closeMenu()"
             >product</a
           >
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="./help.html"
-            class="nav__link nav__link--alt-text-2 link__hover-effect"
+        <li class="menu__list--li">
+          <a href="./help.html" class="menu__link" onclick="closeMenu()"
             >help</a
           >
         </li>
-        <li class="nav__link--list-item">
-          <a
-            href="./info.html"
-            class="nav__link nav__link--active nav__link--alt-text-3 link__hover-effect"
+        <li class="menu__list--li">
+          <a href="./info.html" class="menu__link" onclick="closeMenu()"
             >info</a
           >
         </li>
-        <li class="nav__link--list-item">
-          <a href="" class="nav__link link__hover-effect">
-            <img src="./assets/basket.svg" alt="cart" class="cart__icon" />
-          </a>
-        </li>
       </ul>
-    </nav>
+    </div>
     <section>
       <div class="container__info--page">
         <div class="row__info--page">
           <ul class="info__menu--list">
             <li class="info__menu--li">
-              <a href="./info.html" class="info__menu--link info__menu--link-active"> intro </a>
+              <a
+                href="./info.html"
+                class="info__menu--link info__menu--link-active"
+              >
+                intro
+              </a>
             </li>
             <li class="info__menu--li">
               <a href="./about.html" class="info__menu--link"> about </a>
@@ -90,32 +131,50 @@
               exercitationem debitis magni repudiandae ducimus? Officiis
               molestias voluptatum quidem asperiores.
             </p>
-            <a href="./about.html" class="next__info--item link__hover-effect">next<i class="fa-solid fa-arrow-right-long next__arrow"></i></a>
+            <a href="./about.html" class="next__info--item link__hover-effect"
+              >next<i class="fa-solid fa-arrow-right-long next__arrow"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
     <footer id="footer" class="footer__info--page">
-        <div class="footer__wrapper">
-          <a href="#" class="footer__home--link">earth skincare</a>
-          <div class="footer__menu--wrapper">
-            <ul class="footer__menu--list">
-              <li class="footer__menu--li">
-                <a href="./about.html" class="footer__menu--link link__hover-effect">about</a>
-              </li>
-              <li class="footer__menu--li">
-                <a href="./products.html" class="footer__menu--link link__hover-effect">product</a>
-              </li>
-              <li class="footer__menu--li">
-                <a href="./help.html" class="footer__menu--link link__hover-effect">help</a>
-              </li>
-              <li class="footer__menu--li">
-                <a href="./info.html" class="footer__menu--link link__hover-effect">info</a>
-              </li>
-            </ul>
-          </div>
+      <div class="footer__wrapper">
+        <a href="#" class="footer__home--link">earth skincare</a>
+        <div class="footer__menu--wrapper">
+          <ul class="footer__menu--list">
+            <li class="footer__menu--li">
+              <a
+                href="./about.html"
+                class="footer__menu--link link__hover-effect"
+                >about</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./products.html"
+                class="footer__menu--link link__hover-effect"
+                >product</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./help.html"
+                class="footer__menu--link link__hover-effect"
+                >help</a
+              >
+            </li>
+            <li class="footer__menu--li">
+              <a
+                href="./info.html"
+                class="footer__menu--link link__hover-effect"
+                >info</a
+              >
+            </li>
+          </ul>
         </div>
-        <p class="copyright">© 2024 earth skincare®</p>
-      </footer>
+      </div>
+      <p class="copyright">© 2024 earth skincare®</p>
+    </footer>
   </body>
 </html>
