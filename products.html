@@ -83,13 +83,21 @@
     <section id="product__gallery">
       <div class="product__page--container">
         <div class="product__page--row">
-          <h2 class="product__gallery--title">check out our products</h2>
-          <div class="product__categories">
+          <div class="product__page--header">
+            <h2 class="product__page--title">check out our products:</h2>
+            <select id="filter" onchange="filterProducts(event)">
+              <option value="" disabled selected>Sort</option>
+              <option value="LOW_TO_HIGH">Price, Low to High</option>
+              <option value="HIGH_TO_LOW">Price, High to Low</option>
+              <option value="RATING">Rating</option>
+            </select>
+          </div>
+          <!-- <div class="product__categories">
             <h4 class="product__category--title">+ natural soap</h4>
             <h4 class="product__category--title">+ moisturizers</h4>
             <h4 class="product__category--title">+ shampoos & conditioners</h4>
             <h4 class="product__category--title">+ cleansers</h4>
-          </div>
+          </div> -->
           <div class="product__grid">
             <!-- <div class="product">
                 <figure class="product__img--wrapper">
@@ -104,7 +112,7 @@
                   <a href="./products.html" class="view__product--link">view</a>
                 </p>
               </div> -->
-            <div class="product">
+            <!-- <div class="product">
               <figure class="product__img--wrapper">
                 <img src="./assets/soap1.jpg" alt="soap" class="product__img" />
               </figure>
@@ -327,7 +335,7 @@
                 $11.99
                 <a href="./products.html" class="view__product--link">view</a>
               </p>
-            </div>
+            </div> -->
           </div>
 
           <!-- <a href="./products.html" class="view-all__products--link">
